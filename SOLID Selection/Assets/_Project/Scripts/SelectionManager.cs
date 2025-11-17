@@ -1,6 +1,4 @@
-﻿using NUnit.Framework;
-using UnityEngine;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine;
 
 public partial class SelectionManager : MonoBehaviour
 {
@@ -17,9 +15,6 @@ public partial class SelectionManager : MonoBehaviour
         _rayProvider = GetComponent<IRayProvider>();
         _selector = GetComponent<ISelector>();
         _selectionResponse = GetComponent<ISelectionResponse>();
-
-        //SceneManager.LoadScene("Environment", LoadSceneMode.Additive);
-        //SceneManager.LoadScene("UI", LoadSceneMode.Additive);
     }
 
     private void Update()
